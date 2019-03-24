@@ -6,9 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/GameOver.unity
+    path: Assets/Jamie - Don't Edit/Scenes/GameOver.unity
     guid: 378038486f592124ebfd9884e8b710a6
   - enabled: 1
-    path: Assets/Scenes/MainScene.unity
+    path: Assets/Jamie - Don't Edit/Scenes/MainScene.unity
     guid: 844e9f649561ba0458377c44c605193e
+  - enabled: 1
+    path: Assets/Jamie - Don't Edit/Scenes/EnemyBase.unity
+    guid: bb027d55acc60ea4dbf54876f289c4bb
+  - enabled: 1
+    path: Assets/Jamie - Don't Edit/Scenes/HomeBase.unity
+    guid: c05c9ad49e2e86841a418fe856c89cd8
+  - enabled: 1
+    path: Assets/Jamie - Don't Edit/Scenes/BaseCaptured.unity
+    guid: a186f91bafe8e144fa857d52696b6d57
   m_configObjects: {}
