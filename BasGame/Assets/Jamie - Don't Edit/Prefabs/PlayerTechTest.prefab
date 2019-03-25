@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 864068050824705857}
   - component: {fileID: 864068050824705856}
   m_Layer: 0
-  m_Name: Player
+  m_Name: PlayerTechTest
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -129,6 +129,8 @@ MonoBehaviour:
   shot: {fileID: 7220338609597713757, guid: 51ddca6c0969f7342835cfee176029f7, type: 3}
   shotSpawn: {fileID: 864068050077807413}
   fireRate: 2
+  H: {fileID: 0}
+  hV: 3
 --- !u!50 &864068050824705857
 Rigidbody2D:
   serializedVersion: 4

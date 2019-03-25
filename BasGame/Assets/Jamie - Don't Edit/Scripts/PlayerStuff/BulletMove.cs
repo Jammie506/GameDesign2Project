@@ -4,9 +4,6 @@ using System.Collections;
 public class BulletMove : MonoBehaviour
 {
     public float speed;
-    public float bulletDamage;
-
-    public EnemyController eC;
 
     void Start()
     {
@@ -17,10 +14,9 @@ public class BulletMove : MonoBehaviour
     {
         if (col.gameObject.tag == "Enemy")
         {
-            eC.enemyHealth = eC.enemyHealth - bulletDamage;
+            Destroy(col.gameObject);
             Debug.Log("HIT!");
         }
-        Destroy(this.gameObject);
     }
 
     void OnBecameInvisible()

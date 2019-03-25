@@ -6,11 +6,8 @@ public class EnemyController : MonoBehaviour
 {
     public float speed;
     public float stopDist;
-    public float enemyHealth;
 
     private Transform target;
-
-    public Health pH;
 
     void Start()
     {
@@ -22,11 +19,6 @@ public class EnemyController : MonoBehaviour
         if(Vector2.Distance(transform.position, target.position) > stopDist)
         {
             transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
-        }
-
-        if(enemyHealth <= 0)
-        {
-            Destroy(this.gameObject);
         }
     }
 }

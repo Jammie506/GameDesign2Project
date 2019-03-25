@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Health : MonoBehaviour
 {
-    public int hV;
+    public PlayerController pC;
     Text health;
     public GameOver gO;
 
@@ -16,13 +16,13 @@ public class Health : MonoBehaviour
 
     void Update()
     {
-        health.text = "Health - " + hV;
+        health.text = "Health - " + pC.hV;
 
         if(Input.GetKeyDown(KeyCode.E))
         {
-            hV--;
+            pC.hV--;
         }
-        if(hV == 0)
+        if(pC.hV == 0)
         {
             gO.Dead();
         }
@@ -30,6 +30,6 @@ public class Health : MonoBehaviour
 
     public void enemyHit()
     {
-        hV--;
+        pC.hV--;
     }
 }

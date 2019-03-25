@@ -7,6 +7,6 @@ public class BaseWon : MonoBehaviour
 {
     public void GoHome()
     {
-        SceneManager.LoadScene("HomeBase");
+        SceneManager.LoadScene("GameOver");
     }
 }
